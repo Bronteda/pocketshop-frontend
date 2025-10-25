@@ -31,7 +31,7 @@ const NavBar = () => {
         <li>
           <Link to="/products">Products</Link>
         </li>
-        {user && user ? (
+        {user ? (
           <>
             <li>
               {user && user.has_shop ? (
