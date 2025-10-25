@@ -59,11 +59,7 @@ const ProductOrders = () => {
               <p>Total: ${order.subtotal}</p>
               <p>Status: {order.status}</p>
               <button
-                disabled={
-                  order.status === "Shipped" || order.status === "Delivered"
-                    ? true
-                    : false
-                }
+                disabled={order.status === "Shipped" || order.status === "Delivered"}
                 onClick={() =>
                   handleUpdateOrder(order.id, order.subtotal, order.quantity)
                 }>
