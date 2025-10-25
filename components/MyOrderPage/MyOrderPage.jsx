@@ -74,7 +74,7 @@ const MyOrderPage = () => {
             <p>Total: ${order.subtotal}</p>
             <p>Status: {order.status}</p>
             <button
-              disabled={order.status === "Delivered" ? true : false}
+              disabled={order.status === "Delivered"}
               onClick={() =>
                 handleUpdateOrder(order.id, order.subtotal, order.quantity)
               }>
