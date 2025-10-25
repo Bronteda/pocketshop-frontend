@@ -64,7 +64,6 @@ const MyOrderPage = () => {
               </Link>
             </p>
             <p>
-              {" "}
               Date:{" "}
               {order.created_at
                 ? format(parseISO(order.created_at), "MMM d, yyyy h:mm a")
