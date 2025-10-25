@@ -1,5 +1,5 @@
 import { useState, useEffect, useContext } from "react";
-import { Link, useParams, useNavigate } from "react-router";
+import { Link, useParams } from "react-router";
 import { UserContext } from "../../contexts/UserContext";
 import * as productApi from "../../services/productService";
 import * as orderApi from "../../services/orderService";
