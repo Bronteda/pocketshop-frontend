@@ -16,8 +16,6 @@ const Dashboard = () => {
       const foundUserOrders = await orderApi.getUserOrders();
       setShopOrders(foundShopOrders);
       setUserOrders(foundUserOrders);
-      console.log("shop orders found:", foundShopOrders);
-      console.log("user orders found:", foundUserOrders);
     };
     fetchOrders();
   }, []);

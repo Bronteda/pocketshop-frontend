@@ -95,7 +95,11 @@ const ProductPage = () => {
             </div>
 
             {message && (
-              <div className="notification p-3" role="alert" aria-live="polite">
+              <div
+                style={{ maxWidth: 180 }}
+                className="notification p-3"
+                role="alert"
+                aria-live="polite">
                 {message}
               </div>
             )}
